@@ -12,6 +12,3 @@ node_modules
 #ES5 임시 폴더
 dist
 public/dist
-
-#eslint 파일
-.eslintrc.js
