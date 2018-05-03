@@ -1,16 +1,17 @@
-'use strict';
-//es6 기능: 블록 스코프 변수 선언
-const sentences = [
-    {subject: 'JavaScript', verb: 'is', object: 'great'},
-    {subject: 'Elephants', verb: 'are', object: 'large'},
-];
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+var input_string = '';
 
-// es6 기능 : 객체 분해
-function say({subject, verb, object }){
-    console.log(`${subject} ${verb} ${object}`);
-}
+process.stdin.on('data', function(chunk) {
+    input_string += chunk;
+});
 
-// es6 기능 : for..of
-for (let s of sentences) {
-    say(s);
-}
+process.stdin.on('end', function() {
+    var lines = input_string.split('\n');
+
+    var N = lines[0];
+    for(var i=0; i<N; i++) {
+        var line = lines[i+1].replace(/(^\s+)|(\s+$)/g, '').split(',');
+        console.log('hello = ' + line[0] + ', world = ' + line[1]);
+    }
+});
