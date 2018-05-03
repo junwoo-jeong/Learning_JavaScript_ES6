@@ -14,3 +14,8 @@ for(let prop in o) {
 
 //9.1.2 object.keys, 나열 가능한 문자열 프로퍼티를 배열로 반환
 Object.keys(o).forEach(prop => console.log(`${prop}: ${o[prop]}`));
+
+
+let arr = [1,6,8,5];
+arr.sort();
+console.log(arr[0]+arr[1]);
