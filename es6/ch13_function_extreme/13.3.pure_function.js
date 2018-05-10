@@ -43,3 +43,8 @@ function getRainbowIterator() {
         },
     };
 }
+
+const rainbowIterator = getRainbowIterator();
+setInterval(function() {
+
+})

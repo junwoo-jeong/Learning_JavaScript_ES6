@@ -12,9 +12,9 @@ class Log{
 }
 
 const log = new Log();
-log.add('first day at sea');
-log.add('spotted whale');
-log.add('spotted another vessel');
+log.add("first day at sea");
+log.add("spotted whale");
+log.add("spotted another vessel");
 
 for(let entry of log){
     console.log(`${entry.message} @ ${entry.timestamp}`);

@@ -12,3 +12,6 @@ node_modules
 #ES5 임시 폴더
 dist
 public/dist
+
+#txt 파일
+*.txt
